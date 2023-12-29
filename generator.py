@@ -15,7 +15,7 @@ class MainWindow(QMainWindow):
         super().__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.vbucksAmount = 0
+        self.vbucksAmount = 50000
         self.ui.pushButton.clicked.connect(self.open_file_dialog)
         self.ui.Accept.clicked.connect(self.accept)
         self.dirname = ''
